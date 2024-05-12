@@ -1,0 +1,4 @@
+google-cloud-aiplatform==1.51.0 
+google-cloud-discoveryengine==0.11.11 
+google-cloud-speech==2.26.0 
+ipython==8.24.0

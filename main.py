@@ -147,7 +147,7 @@ print("Working...\n")
 # Using Gemini
 multimodal_model = GenerativeModel("gemini-1.5-pro-preview-0409")
 
-audio_file_uri = ("gs://genai_poc_s/gerar_mapa.ogg")
+audio_file_uri = ("gs://[YOUR-AUDIO-URI]") # @param {type:"string"}
 audio_file = Part.from_uri(audio_file_uri, mime_type="audio/ogg")
 
 prompt = """
@@ -168,7 +168,7 @@ print(response.text)
 # Using Speech to Text
 speech_client = speech.SpeechClient()
 # The name of the audio file to transcribe
-gcs_uri = "gs://genai_poc_s/gerar_mapa.ogg"
+gcs_uri = "gs://[YOUR-AUDIO-URI]" # @param {type:"string"}
 
 audio = speech.RecognitionAudio(uri=gcs_uri)
 
